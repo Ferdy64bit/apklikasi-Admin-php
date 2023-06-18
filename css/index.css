@@ -1,0 +1,23 @@
+/* smartphone */
+@media screen and (max-width: 576px) and (min-width: 300px) {
+  header {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: url("https://pps.whatsapp.net/v/t61.24694-24/317663881_483345193942585_8499434628779986136_n.jpg?ccb=11-4&oh=01_AdS-9jzypfMMo2mA4oKsjL-D9badx8zB8bMElxgmrEf0KA&oe=643CF044");
+    background-size: cover;
+    background-position: center;
+  }
+
+  header:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  }
+}

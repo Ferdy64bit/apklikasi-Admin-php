@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family= Poppins :ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,900 & display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.jumbotron {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  width: 100%;
+  height: 450px;
+  padding: 355px 200px;
+  color: white;
+  box-sizing: border-box;
+  background-color: #aaa;
+  background-image: url(https://pps.whatsapp.net/v/t61.24694-24/317663881_483345193942585_8499434628779986136_n.jpg?ccb=11-4&oh=01_AdS-9jzypfMMo2mA4oKsjL-D9badx8zB8bMElxgmrEf0KA&oe=643CF044);
+  background-size: cover;
+}
+.jumbotron h2,
+.jumbotron p {
+  position: relative;
+}
+.jumbotron p {
+  font-weight: 400;
+  font-size: 1em;
+  font-style: italic;
+}
+.jumbotron h2 {
+  font-weight: 700;
+  font-size: 2.5em;
+}
+.jumbotron h2 span {
+  color: rgb(255, 0, 0);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.9;
+}
+
+/* smartphone */
+@media screen and (max-width: 576px) and (min-width: 300px) {
+  .jumbotron {
+    width: 100%;
+    height: 100%;
+    padding: 50px 20px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+
+    background-color: #aaa;
+  }
+  .jumbotron p {
+    font-weight: 400;
+    font-size: 0.8em;
+    font-style: italic;
+  }
+  .jumbotron h2 {
+    font-weight: 700;
+    font-size: 1.7em;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 30%;
+    background-color: #ffffff;
+    opacity: 0.9;
+  }
+}
+
+/* hgsajkhgfisaudhyfiaskdhfrlksdjfslodjkfshgfsjklf.,jsdkfl;jasl;fdkasl;fdjkawsl;dfkas;lfkas;lfdkas;ldfkas;lfkaws;lfkdsa;lfks */
+/* tablet */
+@media screen and (max-width: 998px) and (min-width: 578px) {
+  .jumbotron {
+    width: 100%;
+    height: 400px;
+    padding: 350px 100px;
+  }
+  .jumbotron p {
+    font-weight: 400;
+    font-size: 1.5em;
+    font-style: italic;
+  }
+  .jumbotron h2 {
+    font-weight: 700;
+    font-size: 2.5em;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 73%;
+    background-color: black;
+    opacity: 0.6;
+  }
+}
+
+#about .container .row .col h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5em;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.char {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2em;
+  font-weight: 200;
+  font-style: italic;
+}
+/* .char p {
+  width: 400px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 2.3em;
+} */
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container .hexagon {
+  position: relative;
+  width: 350px;
+  height: 400px;
+  margin: 50px 20px 50px;
+}
+.container .hexagon::before {
+  content: "";
+  position: absolute;
+  bottom: -70px;
+  width: 100%;
+  height: 60px;
+  background: radial-gradient(rgba(0, 0, 0, 0.15), transparent, transparent);
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.container .hexagon:hover::before {
+  opacity: 0.8;
+  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+}
+.container .hexagon .shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+  transition: 0.5s;
+}
+
+.container .hexagon:hover .shape {
+  transform: translateY(-30px);
+  -webkit-transform: translateY(-30px);
+  -moz-transform: translateY(-30px);
+  -ms-transform: translateY(-30px);
+  -o-transform: translateY(-30px);
+}
+.container .hexagon .shape img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container .hexagon .shape .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  background: linear-gradient(45deg, #03a9fa, rgba(3, 169, 244, 0.5));
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.container .hexagon:hover .shape .content {
+  opacity: 1;
+}
+
+#sasar {
+  clear: both;
+  text-align: center;
+}
